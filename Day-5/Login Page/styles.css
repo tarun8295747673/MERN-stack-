@@ -1,0 +1,9 @@
+input{
+    margin: 5px;
+}
+.login-container {
+    background-color: #ffb413;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
