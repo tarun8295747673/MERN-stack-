@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+
+html, body{
+  font-family: 'Roboto', sans-serif;
+}
+
+label, input{
+  display:block;
+}
+
+form{
+  background:#eee;
+  padding-bottom:2rem
+}
+
+.input-group{
+  padding:1rem;
+  padding-bottom:0;
+}
+
+.input-group >label{
+  font-weight: 600;
+  font-size:0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.input-group .input{
+  width:100%;
+  height:2.25rem;
+  padding:0.5rem;
+  border:1px solid #333;
+  border-radius:0.35rem;
+  font-size:0.875rem; /*This is 14px */
+  color: #22bba0;
+}
+
+.input:focus{
+  outline:none;
+}
+
+.btn-grp{
+  padding:1rem;
+}
+
+.btn-grp .btn{
+   padding:0.75rem 1rem;
+   background:#22baa0;
+   border:0px;
+   color:white;
+   cursor:pointer;
+   border-radius:0.25rem;
+}
+
+.btn-grp .btn:active{
+   transform:translatey(2px);
+}
