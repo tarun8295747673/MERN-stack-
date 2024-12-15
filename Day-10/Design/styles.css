@@ -9,8 +9,8 @@ body{
     position: relative;
 }
 
-.londo{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h1{
+    font-family:poppins;
     font-size: 25px;
     font-weight: bold;
     margin-left: 4rem;
@@ -19,14 +19,20 @@ body{
 
 .header{
     display:flex;
-    margin-left: 10rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
     gap: 50px;
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 98%
+}
+
+.Home{
+    color:  rgb(49, 100, 244);
 }
 
 .header:hover{
     cursor: pointer;
-    color: royalblue;
+    color:  rgb(49, 100, 244);    ;
 }
 
 .main{
@@ -35,13 +41,13 @@ body{
 }
 
 .tag{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: poppins;
     color:gray;
     font-size: 12px;
 }
 
 .title{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins;    ;
     font-size: 65px;
     font-weight: bold;
 }
@@ -49,14 +55,14 @@ body{
 img{
     width: 600px;
     height: 600px;
-    margin-top: 5rem;
+    margin-top: 4rem;
     margin-left: 48rem;
     position: absolute;
     top: 0;
 }
 
 .description{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: poppins;
     color: black;
 
 }
@@ -65,13 +71,15 @@ img{
     margin-top: 2rem;
     margin-left: 4rem;
     padding: 10px 20px;
-    background-color: royalblue;
+    background-color: rgb(49, 100, 244);
     color: white;
-    border: 1px solid royalblue;
+    border: 1px solid  rgb(49, 100, 244);    ;
     border-radius: 9px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: poppins;
     font-weight: bold;
     font-size: 15px;
+    transform: translateY(4px);
+    box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.75);
 }
 
 .see-how-it-works{
@@ -82,36 +90,34 @@ img{
     color: black;
     border: 1px solid gray;
     border-radius: 9px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: poppins;
     font-weight: bold;
     font-size: 15px;
+    box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.75);
 }
 
 .Log-in{
-    margin-top: 2rem;
     margin-left: 80%;
     padding: 10px 20px;
     background-color: whitesmoke;
     border: 1px solid whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: poppins;
     font-weight: bold;
+    margin-left: 40rem;
 }
 
 .Sign-up{
-    margin-top: 2rem;
     padding: 10px 20px;
-    background-color: royalblue;
+    background-color:  rgb(49, 100, 244);    ;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: poppins;
     font-weight: bold;
-    border: 1px solid royalblue;
+    border: 1px solid  rgb(49, 100, 244);
     border-radius: 9px;
-
-
 }
 
 .footer{
-    margin-top: 4rem;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 7rem;
+    font-family: poppins;
     text-align: center;
 }
