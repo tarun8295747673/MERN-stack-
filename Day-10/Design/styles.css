@@ -32,7 +32,7 @@ h1{
 
 .header:hover{
     cursor: pointer;
-    color:  rgb(49, 100, 244);    ;
+    color:  rgb(49, 100, 244);
 }
 
 .main{
@@ -47,7 +47,7 @@ h1{
 }
 
 .title{
-    font-family: Poppins;    ;
+    font-family: Poppins;  
     font-size: 65px;
     font-weight: bold;
 }
@@ -64,7 +64,6 @@ img{
 .description{
     font-family: poppins;
     color: black;
-
 }
 
 .try-for-free{
@@ -73,7 +72,7 @@ img{
     padding: 10px 20px;
     background-color: rgb(49, 100, 244);
     color: white;
-    border: 1px solid  rgb(49, 100, 244);    ;
+    border: 1px solid  rgb(49, 100, 244);  
     border-radius: 9px;
     font-family: poppins;
     font-weight: bold;
@@ -108,7 +107,7 @@ img{
 
 .Sign-up{
     padding: 10px 20px;
-    background-color:  rgb(49, 100, 244);    ;
+    background-color:  rgb(49, 100, 244); 
     color: white;
     font-family: poppins;
     font-weight: bold;
