@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body{
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 400;
+    background-color: rgb(96, 94, 94);
+}
+
+.view{
+   padding: 0.7rem 37rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height:2rem;
+    background-color: black;
+    padding: 0.3rem 1rem;   
+    color: aliceblue;
+}
+
+.container{
+    background-color: rgb(68, 67, 67);
+    border: 2px solid black;
+}
+
+.container-top{
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    background-color: rgb(68, 67, 67);
+    padding: 0.3rem 1rem;
+    color: aliceblue;
+}
+
+.container-center img{
+    margin-top: 2.7rem;
+    width: 100%;
+}
+
+.container-bottom{
+    padding: 2.5rem 1rem;
+    background-color: rgb(68, 67, 67);
+    color: aliceblue;
+}
+
+.container-bottom-heading{
+    padding-bottom: 2rem;
+}
+
+.container-bottom-button h1{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    height: 3rem; 
+    padding: 0.75rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
