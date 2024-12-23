@@ -20,8 +20,14 @@ html body{
     justify-content: space-between;
     height:2rem;
     background-color: black;
-    padding: 0.5rem 1rem;   
+    padding: 0rem 1rem;
+    align-items: center;   
     color: aliceblue;
+}
+
+.header-right{
+    display: flex;
+    gap: 0.4rem;
 }
 
 .container{
@@ -36,6 +42,13 @@ html body{
     background-color: rgb(68, 67, 67);
     padding: 0.3rem 1rem;
     color: aliceblue;
+}
+
+.container-top-right{
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    font-size: 1rem;
 }
 
 .container-center img{
