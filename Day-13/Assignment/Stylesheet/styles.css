@@ -50,6 +50,7 @@ body{
     padding: 0rem 1.5rem;
     font-size: 0.85rem;
     font-weight: 500;
+    gap: 2.125rem;
 }
 
 .container-content-image{
@@ -63,16 +64,14 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    
 }
 
 
 .container-body{
     background-color: #f4f2ff;
-    height: 27rem;
+    height: 26.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 0.5rem;
     border-radius: 1.5rem;
     box-shadow: 0px 10px 5px #b8b4cf;
     
@@ -106,6 +105,21 @@ body{
     border-bottom-right-radius: 1.5rem;
     color: #f4f2ff;
     
+}
+
+.container-content-image-label-name-plus-icon{
+    position: relative;
+    top: -3.4rem;
+    right: 21.05rem;
+    background-color: #6e939e;
+    border-radius: 50%;
+    justify-content: center;
+    height: 1.6rem;
+    width: 1.5rem;
+}
+
+.container-content-image-label-name-plus-icon span{
+    color: #f4f2ff;
 }
 
 .container-body-image-name{
@@ -147,7 +161,7 @@ body{
     justify-content: space-between;
     height: auto;
     margin-left: 1.2rem;
-    margin-right: 1rem;
+    margin-right: 1.2rem;
 
 }
 
@@ -166,7 +180,7 @@ body{
 
 .container-footer{
     height: auto;
-    padding: 0.1rem 0.75rem;
+    padding: 0rem 0.5rem;
 }
 
 .container-footer-logo{
@@ -177,12 +191,25 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.9rem 0.75rem;
+    padding: 0.5rem 0.75rem;
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 
+}
+
+.container-footer-logo-image{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.container-footer-logo-image img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
 }
