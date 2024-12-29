@@ -14,7 +14,7 @@ body{
     border: 1px solid black;
     position: absolute;
     width: 22rem;
-    height: 98vh;
+    height: 45rem;
     margin-left: calc(50% - 11rem);
     margin-top: 0.4rem;
     border-radius: 0.7rem;
@@ -111,6 +111,7 @@ body{
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    border: 1px solid #7a7a7a;
 }
 
 .container-content-Interest-icons-image span{
@@ -226,7 +227,7 @@ body{
     position: relative;
     bottom: 54.2rem;
     color: #ffffff;
-    height: 2.3rem;
+    height: 2.7rem;
     width: auto;
     align-items: center;
     padding: 0.5rem 0.5rem;
