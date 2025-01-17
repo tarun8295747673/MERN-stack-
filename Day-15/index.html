@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" href="./Stylesheet/stylesheet.css">
-    <script src="./java/javascript.js"></script>
 </head>
 <body>
     <div class="container">
@@ -15,56 +14,58 @@
 
             <div class="input-line1">
                 <div>
-                    <label>Full Name</label><br>
-                    <input id="name" name="name" type="text" class="input name" placeholder="Enter your name"/>
+                    <label>Full Name:</label><br>
+                    <input id="name" name="name" type="text" class="input-name" placeholder="Enter your name"/>
                 </div>
                 <div>
-                    <label>Username</label><br>
-                    <input id="username" name="username" type="text" class="input username" placeholder="Enter your username"/>
+                    <label>Username:</label><br>
+                    <input id="username" name="username" type="text" class="input-username" placeholder="Enter your username"/>
                 </div>
             </div>
 
             <div class="input-line2">
                 <div>
-                    <label>Email</label><br>
-                    <input id="email" name="email" type="email" class="input email" placeholder="Enter your email"/>
+                    <label>Email:</label><br>
+                    <input id="email" name="email" type="email" class="input-email" placeholder="Enter your email"/>
                 </div>
                 <div>
-                    <label>Phone Number</label><br>
-                    <input id="phone" name="phone" type="number" class="input phone" placeholder="Enter your number"/>
+                    <label>Phone Number:</label><br>
+                    <input id="phone" name="phone" type="number" class="input-phone" placeholder="Enter your number"/>
                 </div>
             </div>
 
             <div class="input-line3">
                 <div>
-                    <label>Password</label><br>
-                    <input id="password" name="password" type="password" class="input password" placeholder="Enter your password"/>
+                    <label>Password:</label><br>
+                    <input id="password" name="password" type="password" class="input-password" placeholder="Enter your password"/>
                 </div>
                 <div>
-                    <label>Confirm Password</label><br>
-                    <input id="cpassword" name="cpassword" type="password" class="input cpassword" placeholder="Enter your password"/>
+                    <label>Confirm Password:</label><br>
+                    <input id="cpassword" name="cpassword" type="password" class="input-cpassword" placeholder="Enter your password"/>
                 </div>
             </div>
 
             <div class="input-line4">
                 <div>
-                    <label>Gender</label><br>
-                    <input id="gender" name="gender" type="radio" class="input gender" value="Male"/>Male
-                    <input id="gender" name="gender" type="radio" class="input gender" value="Female"/>Female
-                    <input id="gender" name="gender" type="radio" class="input gender" value="Prefer not to say"/>Prefer not to say
+                    <label>Gender:</label><br>
+                    <input id="gender" name="gender" type="radio" class="input-gender" value="Male"/>Male
+                    <input id="gender" name="gender" type="radio" class="input-gender" value="Female"/>Female
+                    <input id="gender" name="gender" type="radio" class="input-gender" value="Prefer not to say"/>Prefer not to say
                 </div>
             </div>
 
             <div class="input-line5">
                 <div>
-                    <label>checkbox</label>
-                    <input id="checkbox" name="checkbox" type="checkbox" class="input checkbox"/>
+                    <label>I agree to all T&C</label>
+                    <input id="checkbox" name="checkbox" type="checkbox" class="input-checkbox"/>
                 </div>
             <div><br>
         </div>
     </div>
     <div class="btn">
-        <button>Register</button>
+        <button onClick="submitHandler()">Register</button>
      </div>
+     
 </body>
+<script src="./script/javascript.js"></script>
 </html>

@@ -10,12 +10,14 @@ body{
     margin: auto;
     margin-top: 0.8rem;
     padding: 5rem 5rem;
+    border-radius: 1rem;
 }
 
 .form{
     width: 100%;
     height: 95%;
     background-color: white;
+    border-radius: 0.8rem;
 }
 
 .form h1{
@@ -26,8 +28,18 @@ body{
 .form .input-line1,.form .input-line2,.form .input-line3,.form .input-line4,.form .input-line5{
     display: flex;
     justify-content: space-between;
-    padding: 1rem 5rem;
+    padding: 0.9rem 4rem;
     font-size: 1.2rem;
+}
+
+.form .input-line1 input,.form .input-line2 input,.form .input-line3 input{
+    width: 15rem;
+    height: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.input-line4 input,.input-line5 input{
+    cursor: pointer;
 }
 
 .form input{
@@ -41,6 +53,13 @@ body{
 .btn button{
     background-image: linear-gradient(to right, #74b2e5 , #945eb0);
     color: #d5e3fb;
-    height: 2rem;
+    height: 2.3rem;
     width: 30rem;
+    border-radius: 2.5rem;
+    font-size: 1.2rem;
+}
+
+.btn button:hover{
+    background-image: linear-gradient(to right, #945eb0 , #74b2e5);
+    cursor: pointer;
 }
