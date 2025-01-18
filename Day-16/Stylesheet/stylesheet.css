@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container{
+    display: flex;
+    padding: 2.3rem 15rem;
+}
+
+.form{
+    width: 50%;
+    height: 90vh;
+    padding: 2rem;
+    background-image: linear-gradient(to right, #733192, #332a93);
+    color: white;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.input{
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.input ::placeholder{
+    color: white;
+    font-size: 1rem;
+}
+
+.input div{
+    margin: 1.5rem 0; 
+}
+
+.btn button{
+    width: 9rem;
+    padding: 0.5rem;
+    background-color: #b92e8b;
+    color: white;
+    border: none;
+}
+
+.input input, .input textarea{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.input textarea{
+    height: 9rem;
+}
+
+.info{
+    width: 50%;
+    height: 90vh;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-color: white;
+}
+
+.contact{
+    margin-top: 4rem;
+}
+
+.contact p{
+    padding: 2rem 4rem;   
+}

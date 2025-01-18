@@ -7,64 +7,76 @@
     <link rel="stylesheet" href="./Stylesheet/stylesheet.css">
 </head>
 <body>
-    <div class="container">
+        <div class="container">
 
-        <div class="form">
-            <h1>Registration Form</h1>
+            <div class="form">
+                <form onsubmit="formValidation()">
+                <h1>Registration Form</h1>
 
-            <div class="input-line1">
-                <div>
-                    <label>Full Name:</label><br>
-                    <input id="name" name="name" type="text" class="input-name" placeholder="Enter your name"/>
+                <div class="input-line1">
+                    <div>
+                        <label>Full Name:</label><br>
+                        <input id="name" name="name" type="text" class="input-name" placeholder="Enter your name"/>
+                        <span id="name-error" style="display: none; color: red;">Name is required</span>
+                    </div>
+                    <div>
+                        <label>Username:</label><br>
+                        <input id="username" name="username" type="text" class="input-username" placeholder="Enter your username"/>
+                        <span id="username-error" style="display: none; color: red;">Username is required</span>
+                    </div>
                 </div>
-                <div>
-                    <label>Username:</label><br>
-                    <input id="username" name="username" type="text" class="input-username" placeholder="Enter your username"/>
-                </div>
-            </div>
 
-            <div class="input-line2">
-                <div>
-                    <label>Email:</label><br>
-                    <input id="email" name="email" type="email" class="input-email" placeholder="Enter your email"/>
+                <div class="input-line2">
+                    <div>
+                        <label>Email:</label><br>
+                        <input id="email" name="email" type="email" class="input-email" placeholder="Enter your email"/>
+                        <span id="email-error" style="display: none; color: red;">Email is required</span>
+                    </div>
+                    <div>
+                        <label>Phone Number:</label><br>
+                        <input id="phone" name="phone" type="number" class="input-phone" placeholder="Enter your number"/>
+                        <span id="phone-error" style="display: none; color: red;">Phone number is required</span>
+                    </div>
                 </div>
-                <div>
-                    <label>Phone Number:</label><br>
-                    <input id="phone" name="phone" type="number" class="input-phone" placeholder="Enter your number"/>
-                </div>
-            </div>
 
-            <div class="input-line3">
-                <div>
-                    <label>Password:</label><br>
-                    <input id="password" name="password" type="password" class="input-password" placeholder="Enter your password"/>
+                <div class="input-line3">
+                    <div>
+                        <label>Password:</label><br>
+                        <input id="password" name="password" type="password" class="input-password" placeholder="Enter your password"/>
+                        <span id="password-error" style="display: none; color: red;">Password is required</span>
+                    </div>
+                    <div>
+                        <label>Confirm Password:</label><br>
+                        <input id="cpassword" name="cpassword" type="password" class="input-cpassword" placeholder="Enter your password"/>
+                        <span id="cpassword-error" style="display: none; color: red;">Password is required</span>
+                    </div>
                 </div>
-                <div>
-                    <label>Confirm Password:</label><br>
-                    <input id="cpassword" name="cpassword" type="password" class="input-cpassword" placeholder="Enter your password"/>
-                </div>
-            </div>
 
-            <div class="input-line4">
-                <div>
-                    <label>Gender:</label><br>
-                    <input id="gender" name="gender" type="radio" class="input-gender" value="Male"/>Male
-                    <input id="gender" name="gender" type="radio" class="input-gender" value="Female"/>Female
-                    <input id="gender" name="gender" type="radio" class="input-gender" value="Prefer not to say"/>Prefer not to say
+                <div class="input-line4">
+                    <div>
+                        <label>Gender:</label><br>
+                        <span><input id="gender" name="gender" type="radio" class="input-gender" value="Male"/>Male</span>
+                        <span><input id="gender" name="gender" type="radio" class="input-gender" value="Female"/>Female</span>
+                        <span><input id="gender" name="gender" type="radio" class="input-gender" value="Prefer not to say"/>Prefer not to say</span>
+                        <span id="gender-error" style="display: none; color: red;">Gender is required</span>    
+                    </div>
                 </div>
-            </div>
 
-            <div class="input-line5">
-                <div>
-                    <label>I agree to all T&C</label>
-                    <input id="checkbox" name="checkbox" type="checkbox" class="input-checkbox"/>
-                </div>
-            <div><br>
+                <div class="input-line5">
+                    <div>
+                        <label>I agree to all T&C</label>
+                        <input id="checkbox" name="checkbox" type="checkbox" class="input-checkbox"/>
+                        <span id="checkbox-error" style="display: none; color: red;">Please agree to T&C</span>
+                    </div>
+                <div><br>
+
+            </form>
+
         </div>
     </div>
     <div class="btn">
         <button onClick="submitHandler()">Register</button>
-     </div>
+    </div>
      
 </body>
 <script src="./script/javascript.js"></script>
