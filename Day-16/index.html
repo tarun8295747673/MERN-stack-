@@ -11,7 +11,7 @@
         <div class="form">
             <span><h1>Send us a message</h1></span>
             <div class ="input">
-                <form onsubmit="formValidation()">
+                <form onsubmit="formValidation(event)">
                     <div> 
                         <input type="text" id="name" placeholder="Name" class="name">
                         <span id="name-error" style="display: none; color: red;">Name is required</span>
@@ -29,7 +29,7 @@
                         <span id="message-error" style="display: none; color: red;">message is required</span>
                     </div>
                     <div class="btn">
-                    <button onClick="submitHandler()">Send Message</button>
+                    <button type="submit">Send Message</button>
                     </div>
                 </form>
             </div>
