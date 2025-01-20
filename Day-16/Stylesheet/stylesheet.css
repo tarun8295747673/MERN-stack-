@@ -45,11 +45,13 @@ body{
     background-color: #b92e8b;
     color: white;
     border: none;
+    border-radius: 0.5rem;
 }
 
 .btn button:hover {
     background-color: #a0267a;
 }
+
 
 .input input, .input textarea{
     width: 100%;
@@ -71,6 +73,17 @@ body{
     border-bottom-right-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     background-color: white;
+}
+
+.info h1{
+    border: none;
+    border-bottom: 0.1rem solid #733192;
+    margin-bottom: 0.5rem;
+}
+
+.contact .material-symbols-outlined{
+    margin-right: 1rem;
+    font-size: 1rem;
 }
 
 .contact{
