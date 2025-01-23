@@ -30,9 +30,9 @@ body{
     margin: 3rem 0;
 }
 
-.input::placeholder {
-    color: white;
+.name::placeholder, .email::placeholder, .subject::placeholder, .message::placeholder{
     font-size: 1rem;
+    color: white;
 }
 
 .input div{
