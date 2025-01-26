@@ -16,9 +16,13 @@ body{
     height: 95vh;
     margin: 0 auto;
     margin-top: 1rem;
-    background-color: #f9fafc;
+    background-color: white;
     border: 0.1px solid gray;
     border-radius: 0.5rem;
+}
+
+.container:hover{
+    background-color: #f9fafc;
 }
 
 .container-header{
@@ -117,6 +121,12 @@ body{
     
 }
 
+.container-body .container-body-item:hover{
+    background-color: #bab6f8;
+    cursor: pointer;
+}
+
+
 .container-body-item{
     box-shadow: 0.1px 0.1px 1.5px 0px gray;
     width: 100%;
@@ -162,7 +172,12 @@ body{
     align-items: center;
     margin: -1rem auto;
     border-radius: 50%;
+    cursor: pointer ;
 } 
+
+.container-bottom-icon button:hover{
+    background-color: #4f4ee8;
+}
 
 .container-bottom{
     width: 100%;
@@ -172,4 +187,5 @@ body{
     align-items: center;
     margin-top: 1.2rem;
     color:  #6867ff;
+  
 }
