@@ -5,7 +5,7 @@ const { addUserController } = require('../../controller/user/addUser.controller'
 const { editUserController } = require('../../controller/user/editUser.controller');
 const { deleteUserController } = require('../../controller/user/deleteUser.controller');
 
-const userRouter = router();
+const  userRouter = router();
 
 userRouter.get('/get', getUserController)
 
