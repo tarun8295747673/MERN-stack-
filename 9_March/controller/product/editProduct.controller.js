@@ -20,7 +20,8 @@ const editProductController = async (req, res) => {
         } else {
             return res.status(200).json(ResponseHandler(false, null, "No model found"));
         }
-    } catch {
+    } catch (error) {
+        console.error(error);
         return res.status(500).json(ResponseHandler(false, null, "Request Failed"));
     }
 };

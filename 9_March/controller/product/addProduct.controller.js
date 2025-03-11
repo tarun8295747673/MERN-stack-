@@ -20,7 +20,8 @@ const addProductController = async (req, res) =>{
         })
         await newProduct.save();
         return res.status(200).json(ResponseHandler(true, {name, model, features}, "Product added successfully"))
-    }catch{
+    } catch (error) {
+        console.error(error);
         return res.status(500).json(ResponseHandler(true, null, "Request Failed"))
     }
 }

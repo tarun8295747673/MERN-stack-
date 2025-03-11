@@ -15,7 +15,8 @@ const getProductController = async (req, res) =>{
         }else{
             return res.status(200).json(ResponseHandler(false, null, "No Product Found"))
         }
-    }catch{
+    } catch (error) {
+        console.error(error);
         return res.status(500).json(ResponseHandler(false, null, "Request Failed"))
     }
 }
