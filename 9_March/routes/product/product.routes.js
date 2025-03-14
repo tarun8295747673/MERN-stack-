@@ -4,7 +4,8 @@ const { getProductController } = require('../../controller/product/getProduct.co
 const { addProductController } = require('../../controller/product/addProduct.controller');
 const { editProductController } = require('../../controller/product/editProduct.controller');
 const { deleteProductController } = require('../../controller/product/deleteProduct.controller');
-
+const { addToFavourites } = require('../../controller/product/favourites/addFavourites.controller');
+const { removeFromCart } = require('../../controller/product/cart/removeFromcart.controller');
 
 const productRouter = router();
 
@@ -16,9 +17,11 @@ productRouter.post('/add', addProductController)
 
 productRouter.put('/edit/:features', editProductController)
 
-productRouter.delete('/delete', deleteProductController)
+productRouter.delete('/delete/:id', deleteProductController)
 
+productRouter.post('/favourites/add', addToFavourites);
 
+productRouter.post('/cart/remove', removeFromCart);
 
 
 module.exports ={

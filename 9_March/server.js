@@ -20,7 +20,7 @@ app.use(bodyparser.json())
 // Routes
 app.use('/api/v1', mainRouter)
 
-const PORT = process.env.PORT || 9091
+const PORT = process.env.PORT || 9092
 
 const initApp = async () =>{
     app.listen(PORT, ()=>{
@@ -30,4 +30,3 @@ const initApp = async () =>{
 }
 
 initApp()
-
