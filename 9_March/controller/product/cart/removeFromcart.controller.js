@@ -1,5 +1,5 @@
-const { ResponseHandler } = require("../../../utils/responseHandler.js");
-const { Product } = require("../../../model/product.model.js");
+const { ResponseHandler } = require('../../../utils/responseHandler.js');
+const { Product } = require('../../../model/product.model.js');
 
 const removeFromCart = async (req, res) => {
   try {
@@ -7,18 +7,23 @@ const removeFromCart = async (req, res) => {
     const product = await Product.findById(productId);
 
     if (!product) {
-      return res.status(200).json(ResponseHandler(false, null, "Product Not Found"));
+      return res.status(404).json(ResponseHandler(false, null, "Product Not Found"));
     }
 
-    product.cart = product.cart.filter(item => item.productId.toString() !== productId);
-    await product.save();
+    product.cart = product.cart
+      .map(item => {
+        if (item.userId.toString() === userId) {
+          item.quantity -= 1;
+        }
+        return item;
+      })
+      .filter(item => item.quantity > 0); 
 
-    return res.status(200).json(ResponseHandler(true, null, "Product Removed from Cart"));
+    await product.save();
+    return res.status(200).json(ResponseHandler(true, null, "Product quantity updated in cart"));
   } catch (error) {
     return res.status(500).json(ResponseHandler(false, null, "Internal Server Error"));
   }
 };
 
-module.exports = {
-  removeFromCart,
-};
+module.exports = { removeFromCart };

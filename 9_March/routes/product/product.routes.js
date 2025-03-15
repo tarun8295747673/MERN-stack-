@@ -9,21 +9,20 @@ const { removeFromCart } = require('../../controller/product/cart/removeFromcart
 
 const productRouter = router();
 
-productRouter.get('/get', getProductController)
+productRouter.get('/get', getProductController);
 
-productRouter.get('/get/:id', getProductController)
+productRouter.get('/get/:id', getProductController);
 
-productRouter.post('/add', addProductController)
+productRouter.post('/add', addProductController);
 
-productRouter.put('/edit/:features', editProductController)
+productRouter.put('/edit/:features', editProductController);
 
-productRouter.delete('/delete/:id', deleteProductController)
+productRouter.delete('/delete/:id', deleteProductController);
 
 productRouter.post('/favourites/add', addToFavourites);
 
 productRouter.post('/cart/remove', removeFromCart);
 
-
-module.exports ={
+module.exports = {
     productRouter
-}
+};
